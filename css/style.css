@@ -1,12 +1,58 @@
-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 50px;
-    height: 100px;
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-div.title{
-    margin-left: 10px;
+/* Header principal */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Título MagicRoll */
+.title h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.title h1 sup {
+    font-size: 0.8em;
+    color: #007bff;
+}
+
+/* Navegación */
+.navigation {
+    margin: 0;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #007bff;
 }
